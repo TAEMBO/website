@@ -58,6 +58,8 @@
 .bgdiv {
     background: radial-gradient(50% 51200% at 50% 48.89%, #2d19b2 0%, #111111 100%);
     background-attachment: scroll;
+    height: 100vh;
+    overflow: auto;
 }
 
 .hobbies {
