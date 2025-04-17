@@ -1,6 +1,6 @@
 
 
-import type { Metadata } from 'next'
+import type { Metadata, Viewport } from 'next'
 import { Be_Vietnam_Pro } from 'next/font/google'
 import './globals.css'
 
@@ -11,10 +11,11 @@ const beVietnamPro = Be_Vietnam_Pro({
 
 export const metadata: Metadata = {
   title: 'TÆMBØ',
-  icons: "https://cdn.taembo.net/favicon.ico"
+  icons: "https://cdn.taembo.net/favicon.ico",
+  description: "Your average Silicon Valley tech enthusiast"
 }
 
-export const viewport = {
+export const viewport: Viewport = {
     width: 'device-width',
     initialScale: 1,
     minimumScale: 1,

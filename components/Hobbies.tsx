@@ -1,6 +1,7 @@
 import Hobby from "@/components/Hobby";
 import styles from "../app/page.module.css";
-import { hobbies } from "@/lib";
+// import { hobbies } from "@/lib";
+import hobbies from "../hobbies.json";
 
 export default function Hobbies() {
     return (
