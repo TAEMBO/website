@@ -10,23 +10,24 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "highlight.js": "^11.9.0",
+    "highlight.js": "^11.10.0",
     "jquery": "^3.7.1",
     "next": "14.0.4",
-    "react": "^18",
-    "react-dom": "^18",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "react-icons": "^4.12.0",
-    "tailwindcss": "^3.3.6"
+    "sharp": "^0.34.1",
+    "tailwindcss": "^3.4.14"
   },
   "devDependencies": {
-    "@types/jquery": "^3.5.29",
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "eslint": "^8",
+    "@types/jquery": "^3.5.31",
+    "@types/node": "^20.16.12",
+    "@types/react": "^18.3.11",
+    "@types/react-dom": "^18.3.1",
+    "eslint": "^8.57.1",
     "eslint-config-next": "14.0.4",
-    "eslint-plugin-react": "^7.35.2",
-    "typescript": "^5"
+    "eslint-plugin-react": "^7.37.1",
+    "typescript": "^5.6.3"
   },
   "packageManager": "pnpm@9.12.2+sha256.2ef6e547b0b07d841d605240dce4d635677831148cd30f6d564b8f4f928f73d2"
 }

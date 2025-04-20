@@ -1,9 +1,8 @@
 import { notFound, redirect } from "next/navigation";
-import hobbies from "../../hobbies.json";
-
+import { HOBBIES } from "@/util/constants";
 
 export default function Page({ params }: { params: { hobby: string } }) {
-    const hobby = hobbies.find((x) => x.redirect.slice(1) === params.hobby);
+    const hobby = HOBBIES.find((x) => x.redirect.slice(1) === params.hobby);
 
     if (!hobby) return notFound();
 

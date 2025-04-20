@@ -1,12 +1,11 @@
 import Hobby from "@/components/Hobby";
 import styles from "../app/page.module.css";
-// import { hobbies } from "@/lib";
-import hobbies from "../hobbies.json";
+import { HOBBIES } from "@/util/constants";
 
 export default function Hobbies() {
     return (
         <div className={styles.hobbies}>
-            {hobbies.map((hobby, index) => {
+            {HOBBIES.map((hobby, index) => {
                 return <Hobby name={hobby.title} href={hobby.redirect} description={hobby.description} title={hobby.hover} key={index} />;
             })}
         </div>
