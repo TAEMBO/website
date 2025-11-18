@@ -1,10 +1,11 @@
 import { notFound, redirect } from "next/navigation";
 import { HOBBIES } from "@/util/constants";
 
-export default function Page({ params }: { params: { hobby: string } }) {
-    const hobby = HOBBIES.find((x) => x.redirect.slice(1) === params.hobby);
+export default async function Page({ params }: { params: Promise<{ hobby: string }> }) {
+    const { hobby } = await params;
+    const foundHobby = HOBBIES.find((x) => x.redirect.slice(1) === hobby);
 
-    if (!hobby) return notFound();
+    if (!foundHobby) return notFound();
 
-    redirect(hobby.destination);
+    redirect(foundHobby.destination);
 }
