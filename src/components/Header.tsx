@@ -11,7 +11,7 @@ export default function Header() {
                 <h1>{TITLE}</h1>
                 <p>{DESCRIPTION}</p>
             </section>
-            <Image src="https://cdn.taembo.net/pfp.png" alt="logo" height={256} width={256} />
+            <Image src="https://cdn.taembo.net/pfp.svg" alt="logo" height={256} width={256} />
         </header>
     );
 }
